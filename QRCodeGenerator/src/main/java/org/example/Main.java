@@ -11,8 +11,8 @@ public class Main {
 
             String message = QRCodeGenerator.generateQRCode(data,path);
             System.out.println(message);
-        } catch (Exception e) {
-            System.err.println("Error: QR code generation failed " + e.getMessage());
+        }catch (Exception e) {
+            System.err.println("Error: QR code generation failed: " + e.getMessage());
         }
     }
 }
